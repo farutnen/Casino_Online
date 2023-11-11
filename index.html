@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortuna Dorada</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="img/logo/logo.png" class="logo" alt="logo-fortuna-dorada" width="125px"></a>
+        <ul class="nav">
+            <li><a href="#">Home <i class="fa fa-home"></i></a></li>
+            <li><a href="#">Categorías <i class="fa fa-coins"></i></a></li>
+            <li><a href="./pages/about.html">Sobre nosotros <i class="fa fa-phone"></i></a></li>
+        </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                    <input type="text" placeholder="Buscar juego..." />
+                </div>
+            </div>
+            <div class="btn-login">
+                <a href="./pages/login.html">Iniciar sesión <i class="fa fa-user"></i></a>
+            </div>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <!-- banner principal-->
+
+    <main>
+        <div class="banner animeX">
+            <div class="bg">
+                <div class="content">
+                    <h2>Fortuna Dorada</h2>
+                    <p>Somos una empresa dedicada al casino online.</p>
+                    <a href="#" class="btn">gana ahora!</a>
+                </div>
+                <img src="./img/cartas.png" alt="cartas-de-poker">
+            </div>
+        </div>
+    </main>
+
+    <!-- juegos más destacados -->
+
+    <section class="juegos animeX">
+        <div class="contentBx">
+            <h3>Nuestros mejores juegos</h3>
+            <ul>
+                <li class="list" data-filter="all">Todos</li>
+                <li class="list" data-filter="popular">Más populares</li>
+                <li class="list" data-filter="poker">poker</li>
+                <li class="list" data-filter="slots">slots</li>
+            </ul>
+            <div class="cardBx">
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/2-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Esqueleto Mariachi</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$20.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/1-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Wild Worlds</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$10.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/3-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Golden Criptex</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$30.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/4-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Double Wammy</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$10.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/5-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Reel Gems</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$20.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/6-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Flowers</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$30.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/7-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>What a Hoot</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$40.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/8-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Dolphin Quest</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$10.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/9-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>Cool Buck</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$20.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card" data-item="popular">
+                    <img src="./img/slots/10-slot.jpg" alt="casino-online">
+                    <div class="content">
+                        <h4>So many monsters</h4>
+                        <p>profit:</p>
+                        <div class="profit-line"><span></span></div>
+                        <div class="info">
+                            <p>pago mínimo:</p>
+                            <p><span>$20.-</span></p>
+                        </div>
+                        <a href="#">Juega ahora</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- categorías -->
+
+    <section class="categorias animeX">
+        <h2>Por Categorias</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="./img/categorias/cat-slots.jpg" alt="slots">
+                <div class="content">
+                    <h4><span>| SLOTS |</span></h4>
+                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
+                    <div class="btn">
+                        <a href="#" class="categoria">ver juegos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/categorias/cat-ruleta.jpg" alt="ruleta">
+                <div class="content">
+                    <h4><span>| RULETA |</span></h4>
+                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
+                    <div class="btn">
+                        <a href="#" class="categoria">ver mesas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/categorias/cat-poker.jpg" alt="cartas">
+                <div class="content">
+                    <h4><span> | CARTAS | </span></h4>
+                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
+                    <div class="btn">
+                        <a href="#" class="categoria">ver juegos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/categorias/cat-ruleta.jpg" alt="ruleta">
+                <div class="content">
+                    <h4><span>| EN VIVO |</span></h4>
+                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
+                    <div class="btn">
+                        <a href="#" class="categoria">ver mesas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/categorias/cat-ruleta.jpg" alt="ruleta">
+                <div class="content">
+                    <h4><span>| CASA DE APUESTAS |</span></h4>
+                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
+                    <div class="btn">
+                        <a href="#" class="categoria">ver mesas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sobre Nosotros -->
+
+    <section class="about">
+        <div class="contentBx">
+            <h2>Conócenos mejor</h2>
+            <p> Jugá en cualquier lugar y en cualquier momento. No hay necesidad de planear un día de excursión cuando jugás juegos de casino online.En la mayoría de los casinos online podés jugar desde cualquier lugar y en cualquier momento.Diseño del juego.Los juegos de casino online ofrecen una experiencia inmersiva ya que presentan hermosos gráficos en 3 D con infinidad de opciones temáticas.</p>
+
+            <a href=""><i>Registrate</i></a>
+        </div>
+        <img src="./img/slots.png" alt="slots">
+    </section>
+    
+<!-- footer -->
+<footer>
+    <div class="info">
+        <a href="#" class="logo">Fortuna Dorada</a>
+        <p><i class="fa-solid fa-copyright">  2023 Todos los derechos reservados</i></p>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </div>
+</footer>
+    
+    <!-- Scripts -->
+    
+    <script>
+        /* sticky - Navbar Fija */
+
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('active')
+            nav.classList.toggle('active')
+        });
+        
+        /* responsive navbar */
+
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+        /* efecto de animación del scroll */
+
+        window.addEventListener('scroll', function(){
+            var anime = document.querySelectorAll('.animeX');
+            for(var s = 0; s < anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+                if(animetop < windowheight - animepoint){
+                    anime[s].classList.add('active');
+                }else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+
+        /* Filtrado de Categorías */
+
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for (let i = 0; i<list.length; i++){
+            list[i].addEventListener('click',function(){
+                for (let j=0; j<list.length; j++) {
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for (let k = 0; k < card.length; k++) {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all') {
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+        };
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth scroll;
+}
+
+:root {
+    --bg-color: #181818;
+    --bg-nav: #343434;
+    --golden: #a87b05;
+    --golden-light: rgb(190, 190, 25);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* ?scrollbar */
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--golden);
+    border-radius: 6px;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-nav);
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header.sticky {
+    background: var(--bg-color);
+    box-shadow: 0 5px 20px var(--golden);
+}
+
+header .logo {
+    position: relative;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+header ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+header .btn-login a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+header .btn-login a:hover {
+    background: var(--golden);
+    color: white;
+    box-shadow: 0 0 10px var(--golden);
+}
+
+header ul li a:hover {
+    background: var(--golden);
+    color: white;
+    box-shadow: 0 0 10px var(--golden);
+}
+
+header .nav a {
+    color: inherit;
+    color: beige;
+}
+
+header .action .searchBx {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+
+header .action .searchBx i {
+    font-size: 1.4em;
+    margin: 5px;
+    color: var(--bg-color);
+    
+}
+
+header .action .searchBx input {
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: var(--bg-color);
+}
+
+/* banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner .bg {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content {
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2 {
+    font-size: 4em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content p {
+    font-size: 1em;
+    color: white;
+}
+
+.banner .bg .content a, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid var(--golden);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg content a:hover, .btn:hover {
+    background: var(--golden);
+    border: none;
+    color: var(--bg-color);
+    box-shadow: 0 0 10px var(--golden);
+}
+
+.banner .bg img {
+    max-width: 400px;
+}
+
+/* Sobre Nosotros */
+
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.about .contentBx {
+    width: 50%;
+    margin: 20px;
+}
+
+.about .contentBx p, h2 {
+    max-width: 600px;
+    color: beige;
+}
+
+.about .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid var(--golden);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.about .contentBx a:hover {
+    background: var(--golden);
+    border: none;
+    color: white;
+    box-shadow: 0 0 10px var(--golden);
+}
+
+.about img {
+    max-width: 600px;
+}
+
+/* JUEGOS MAS DESTACADOS */
+
+.juegos {
+    padding: 0 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.juegos .contentBx {
+    margin-top: 50px;
+}
+
+.juegos h3 {
+    color: white;
+    margin: 10px 0;
+}
+
+
+.juegos .contentBx h3{
+    font-weight: 700;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juegos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.juegos ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+}
+
+.juegos ul li.active {
+    background: var(--golden);
+    box-shadow: 0 0 10px var(--golden);
+}
+
+.juegos .cardBx {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.juegos .cardBx .card {
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: var(--bg-nav);
+    overflow: hidden;
+}
+
+.juegos .cardBx .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.juegos .cardBx .card .content {
+    padding: 10px;
+}
+
+.juegos .cardBx .card .content h4{
+    color: white;
+    margin: 15px 0;
+}
+
+/* barra vacia*/
+.juegos .cardBx .card .content .profit-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: var(--bg-color);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+
+/* barra llena ejemplo */
+.juegos .cardBx .card .content .profit-line span {
+    position: absolute;
+    height: 100%;
+    width: 85%;
+    border-radius: 10px;
+    background: var(--golden);
+    box-shadow: 0 0 10px var(--golden);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+
+}
+
+.juegos .cardBx .card .info {
+    border-top: 2px solid var(--bg-nav);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.juegos .cardBx .card .info p, .juegos .contentBx .content p {
+    font-size: 1em;
+    color: white;
+}
+
+.juegos .contentBx .content p span {
+    color: var(--golden-light);
+
+}
+
+.juegos .cardBx .card .content a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid var(--golden);
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.juegos .cardBx .card .content a:hover {
+    background: var(--golden);
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 0 10px var(--golden);
+}
+
+
+.juegos .cardBx .card.hide {
+    display: none;
+}
+
+
+/* CATEGORIAS */
+
+.categorias {
+    padding: 0 100px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias h2  {
+    color: white;
+    margin: 10px 0;
+}
+
+.categorias .boxBx {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias .boxBx .box {
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: var(--bg-nav);
+    overflow: hidden;
+}
+
+.categorias .boxBx .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.categorias .boxBx .box .content {
+    padding: 10px;
+
+}
+
+
+.categorias .boxBx .box .content h4{
+    color: white;
+    margin-top: 15px;
+}
+
+.categorias .boxBx .box .content h4 span{
+    color: var(--golden-light);
+}
+
+.categorias .boxBx .box .content p{
+    color: white;
+    margin-top: 10px;
+}
+
+.categorias .boxBx .box .content .btn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.categorias .boxBx .box .content .btn a.categoria {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.categoria .boxBx .box .content .watch {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: var(--golden);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: var(--bg-nav);
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px var(--golden);
+}
+
+.categorias .boxBx .box .content .watch:hover {
+    border: none;
+    color: var(--golden);
+    box-shadow: 0 0 10px var(--golden);
+}
+
+
+/* LOGIN */
+
+.loginBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    color: white;
+}
+
+.loginBx h1 {
+    font-size: 36px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+}
+
+.loginBx .input-box {
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid var(--golden);
+    border-radius: 5px;
+    font-size: medium;
+    color: white;
+    padding: 20px;
+
+}
+
+.input-box input::placeholder,.input-box .btn {
+    color: wheat;
+}
+
+.input-box i.fa-user {
+    position: absolute;
+    right: 30%;
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+
+.input-box i.fa-lock {
+    position: absolute;
+    right: 30%;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.login .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 300; 
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a, .register-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.remember-forgot a:hover, .register-link a:hover {
+    color: gold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register-link p {
+    font-style: italic;
+}
+
+
+.remember-forgot .btn {
+    background: var(--golden);
+}
+
+.remember-forgot .btn:hover {
+    color: white;
+}
+
+/* footer */
+
+footer {
+    padding: 10px 100px;
+    background: var(--bg-nav);
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info .logo{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+footer .info p {
+    color: wheat;
+}
+
+footer .info ul {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--golden);
+}
+
+footer .info ul li:hover{
+    background: var(--golden);
+    border: none;
+    box-shadow: 0 0 10px var(--golden);
+}
+
+footer .info ul li a i{
+    font-size: 1.5em;
+    color: white;
+}
+
+footer .info ul li:hover a i{
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+footer .info ul li a i{
+    color: white;
+}
+
+/* responsive */
+
+@media (max-width: 991px)
+{
+    header{
+        padding: 15px 40px;
+    }
+
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: var(--bg-nav);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    
+    header .nav.active{
+        display: flex;
+    }
+
+    header .nav li {
+        margin: 20px 0;
+    }
+
+    header .nav li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(./img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+        color: white;
+    }
+
+    .toggleMenu.active{
+        background: url(./img/cerrar.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+    .banner img {
+        position: absolute;
+    }
+
+    .banner .bg .content {
+        width: 100%;
+        height: 100%;
+        background: var(--bg-nav / 50%);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .about {
+        flex-direction: column;
+    }
+    
+    .about .contentBx{
+        width: 100%;
+    }
+    footer {
+        padding: 10px 20px;
+    }
+    footer p{
+        font-size: smaller;
+    } 
+}   
+
