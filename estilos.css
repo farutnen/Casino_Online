@@ -493,6 +493,13 @@ header .action .searchBx input {
 
 /* LOGIN */
 
+
+
+.login h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
 .loginBx {
     display: flex;
     justify-content: center;
@@ -552,8 +559,7 @@ header .action .searchBx input {
 
 .login .remember-forgot {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     font-size: 300; 
 }
 
