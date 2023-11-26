@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión </title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <!-- favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="../img/cartas.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo/favicon.svg" />
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
 </head>
@@ -16,10 +16,13 @@
         <a href="../index.html"><img src="../img/logo/logo.png" class="logo" alt="logo-fortuna-dorada" width="125px"></a>
         <ul class="nav">
             <li><a href="../index.html">Home <i class="fa fa-home"></i></a></li>
-            <li><a href="#">Categorías <i class="fa fa-coins"></i></a></li>
-            <li><a href="./about.html">Sobre nosotros <i class="fa fa-phone"></i></a></li>
+            <li><a href="../pages/404notFound.html">Categorías <i class="fa fa-coins"></i></a></li>
+            <li><a href="../pages/about.html">Sobre nosotros <i class="fa fa-phone"></i></a></li>
         </ul>
-        <div class="toggleMenu"></div>
+                    <div class="btn-login">
+                <a href="login.html"><i class="fa fa-user"></i> Iniciar sesión</a>
+            </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
     </header>
 
     <!-- LOGIN -->
@@ -42,5 +45,8 @@
             <a href="#">Crear cuenta</a>
         </form>
     </section>
+    
+    <!-- responsive navbar-->
+    <script src="../js/toggleMenu.js"></script>
 </body>
 </html>

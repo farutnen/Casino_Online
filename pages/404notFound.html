@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortuna Dorada</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo/favicon.svg" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="../img/logo/logo.png" class="logo" alt="logo-fortuna-dorada" width="125px"></a>
+        <ul class="nav">
+            <li><a href="../index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="../index.html"><i class="fa fa-coins"></i> Categorías</a></li>
+            <li><a href="./about.html"><i class="fa fa-phone"></i> Sobre nosotros</a></li>
+        </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                    <input type="text" placeholder="Buscar juego..." />
+                </div>
+            </div>
+            <div class="btn-login">
+                <a href="./login.html"><i class="fa fa-user"></i> Iniciar sesión</a>
+            </div>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <!-- banner principal-->
+
+    <main>
+        <div class="banner animeX">
+            <div class="bg">
+                <div class="content">
+                    <h1>404</h1>
+                    <p class="not-found">Página no encontrada.</p>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    
+<!-- footer -->
+<footer>
+    <div class="info">
+        <a href="../index.html" class="logo">Fortuna Dorada</a>
+        <p><i class="fa-solid fa-copyright">  2023 Todos los derechos reservados</i></p>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </div>
+</footer>
+    
+    <!-- Scripts -->
+    
+    <!-- owl-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+   
+    <!-- responsive navbar -->  
+    <script src="../js/toggleMenu.js"></script>
+    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+   
+        /*owl */
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                nav: true,
+                responsive:{
+                    0:{
+                        item:1
+                    },
+                    600:{
+                        item:2
+                    },
+                    1000:{
+                        item:4
+                    }
+
+                }
+            });
+        });
+
+        /* sticky - Navbar Fija */
+
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('active')
+            nav.classList.toggle('active')
+        });
+        
+
+
+      
+
+        /* efecto de animación del scroll */
+
+        window.addEventListener('scroll', function(){
+            var anime = document.querySelectorAll('.animeX');
+            for(var s = 0; s < anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+                if(animetop < windowheight - animepoint){
+                    anime[s].classList.add('active');
+                }else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+
+        
+    </script>
+</body>
+
+</html>

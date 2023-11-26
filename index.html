@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortuna Dorada</title>
-    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <!-- owl carousel --><!-- owl carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!-- favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo/favicon.svg" />
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
 </head>
@@ -16,9 +20,9 @@
     <header>
         <a href="#"><img src="img/logo/logo.png" class="logo" alt="logo-fortuna-dorada" width="125px"></a>
         <ul class="nav">
-            <li><a href="#">Home <i class="fa fa-home"></i></a></li>
-            <li><a href="#">Categorías <i class="fa fa-coins"></i></a></li>
-            <li><a href="./pages/about.html">Sobre nosotros <i class="fa fa-phone"></i></a></li>
+            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="./pages/404notFound.html"><i class="fa fa-coins"></i> Categorías</a></li>
+            <li><a href="./pages/about.html"><i class="fa fa-phone"></i> Sobre nosotros</a></li>
         </ul>
             <div class="action">
                 <div class="searchBx">
@@ -27,7 +31,7 @@
                 </div>
             </div>
             <div class="btn-login">
-                <a href="./pages/login.html">Iniciar sesión <i class="fa fa-user"></i></a>
+                <a href="./pages/login.html"><i class="fa fa-user"></i> Iniciar sesión</a>
             </div>
             <div class="toggleMenu" onclick="toggleMenu();"></div>
     </header>
@@ -38,11 +42,14 @@
         <div class="banner animeX">
             <div class="bg">
                 <div class="content">
-                    <h2>Fortuna Dorada</h2>
+                    <div class="titulo">
+                        <img class="logo" src="./img/logo/logo.svg" alt="cartas-de-poker">
+                        <h2>Fortuna Dorada</h2>
+                    </div>
                     <p>Somos una empresa dedicada al casino online.</p>
                     <a href="#" class="btn">gana ahora!</a>
                 </div>
-                <img src="./img/cartas.png" alt="cartas-de-poker">
+                <img class="grande" src="./img/cartas.png" alt="cartas-de-poker">
             </div>
         </div>
     </main>
@@ -58,8 +65,8 @@
                 <li class="list" data-filter="poker">poker</li>
                 <li class="list" data-filter="slots">slots</li>
             </ul>
-            <div class="cardBx">
-                <div class="card" data-item="popular">
+            <div class="cardBx owl-carousel">
+                <div class="card item" data-item="popular">
                     <img src="./img/slots/2-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Esqueleto Mariachi</h4>
@@ -72,7 +79,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="poker">
                     <img src="./img/slots/1-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Wild Worlds</h4>
@@ -85,7 +92,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="popular">
                     <img src="./img/slots/3-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Golden Criptex</h4>
@@ -98,7 +105,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="poker">
                     <img src="./img/slots/4-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Double Wammy</h4>
@@ -111,7 +118,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="popular slots">
                     <img src="./img/slots/5-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Reel Gems</h4>
@@ -124,7 +131,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="popular slots">
                     <img src="./img/slots/6-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Flowers</h4>
@@ -137,7 +144,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="popular">
                     <img src="./img/slots/7-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>What a Hoot</h4>
@@ -150,7 +157,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="popular">
                     <img src="./img/slots/8-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Dolphin Quest</h4>
@@ -163,7 +170,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="popular">
                     <img src="./img/slots/9-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>Cool Buck</h4>
@@ -176,7 +183,7 @@
                         <a href="#">Juega ahora</a>
                     </div>
                 </div>
-                <div class="card" data-item="popular">
+                <div class="card item" data-item="popular">
                     <img src="./img/slots/10-slot.jpg" alt="casino-online">
                     <div class="content">
                         <h4>So many monsters</h4>
@@ -197,7 +204,7 @@
 
     <section class="categorias animeX">
         <h2>Por Categorias</h2>
-        <div class="boxBx">
+        <div class="boxBx owl-carousel">
             <div class="box">
                 <img src="./img/categorias/cat-slots.jpg" alt="slots">
                 <div class="content">
@@ -224,7 +231,7 @@
                     <h4><span> | CARTAS | </span></h4>
                     <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
                     <div class="btn">
-                        <a href="#" class="categoria">ver juegos</a>
+                        <a href="./pages/404notFound.html" class="categoria">ver juegos</a>
                     </div>
                 </div>
             </div>
@@ -234,7 +241,7 @@
                     <h4><span>| EN VIVO |</span></h4>
                     <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
                     <div class="btn">
-                        <a href="#" class="categoria">ver mesas</a>
+                        <a href="./pages/404notFound.html" class="categoria">ver mesas</a>
                     </div>
                 </div>
             </div>
@@ -244,7 +251,7 @@
                     <h4><span>| CASA DE APUESTAS |</span></h4>
                     <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
                     <div class="btn">
-                        <a href="#" class="categoria">ver mesas</a>
+                        <a href="./pages/404notFound.html" class="categoria">ver mesas</a>
                     </div>
                 </div>
             </div>
@@ -256,7 +263,7 @@
 
     <section class="about">
         <div class="contentBx">
-            <h2>Conócenos mejor</h2>
+            <h2>Conocenos mejor</h2>
             <p> Jugá en cualquier lugar y en cualquier momento. No hay necesidad de planear un día de excursión cuando jugás juegos de casino online.En la mayoría de los casinos online podés jugar desde cualquier lugar y en cualquier momento.Diseño del juego.Los juegos de casino online ofrecen una experiencia inmersiva ya que presentan hermosos gráficos en 3 D con infinidad de opciones temáticas.</p>
 
             <a href=""><i>Registrate</i></a>
@@ -279,8 +286,38 @@
 </footer>
     
     <!-- Scripts -->
+    <!-- responsive navbar  --> 
+    <script src="./js/toggleMenu.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <!-- owl-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     
     <script>
+   
+        /*owl */
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                nav: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:4
+                    }
+
+                }
+            });
+        });
+
         /* sticky - Navbar Fija */
 
         window.addEventListener('scroll', function () {
@@ -289,14 +326,8 @@
             nav.classList.toggle('active')
         });
         
-        /* responsive navbar */
 
-        function toggleMenu(){
-            const toggleMenu = document.querySelector('.toggleMenu');
-            const nav = document.querySelector('.nav');
-            toggleMenu.classList.toggle('active')
-            nav.classList.toggle('active')
-        }
+
 
         /* efecto de animación del scroll */
 

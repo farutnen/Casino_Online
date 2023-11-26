@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión </title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <!-- favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="../img/cartas.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo/favicon.svg" />
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
 </head>
@@ -73,8 +73,9 @@
         </div>
     </footer>
 
-    
-    
+    <!-- responsive navbar-->
+    <script src="../js/toggleMenu.js"></script>
+
     <!-- Scripts -->
     
     <script>
@@ -86,14 +87,7 @@
             nav.classList.toggle('active')
         });
         
-        /* responsive navbar */
 
-        function toggleMenu(){
-            const toggleMenu = document.querySelector('.toggleMenu');
-            const nav = document.querySelector('.nav');
-            toggleMenu.classList.toggle('active')
-            nav.classList.toggle('active')
-        }
 
         /* efecto de animación del scroll */
 
