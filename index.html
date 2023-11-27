@@ -1,377 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortuna Dorada</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Nodo Norte - Agencia Multimedial</title>
+    <link rel="stylesheet" href="/Agencia_landingPage/assets/css/"> <!-- favicon -->
+    <link rel="stylesheet" href="/Agencia_landingPage/assets/css/"> <!-- swiper CSS -->
+    <!-- Enlaza tus archivos de estilo CSS aquí -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <!-- owl carousel --><!-- owl carousel -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    <!-- favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="./img/logo/favicon.svg" />
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
+    <!-- Enlaza cualquier librería de JavaScript aquí si es necesario -->
+    <!-- <script src="archivo.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Agrega esto en la sección head de tu HTML -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
-        <a href="#"><img src="img/logo/logo.png" class="logo" alt="logo-fortuna-dorada" width="125px"></a>
-        <ul class="nav">
-            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="./pages/404notFound.html"><i class="fa fa-coins"></i> Categorías</a></li>
-            <li><a href="./pages/about.html"><i class="fa fa-phone"></i> Sobre nosotros</a></li>
-        </ul>
-            <div class="action">
-                <div class="searchBx">
-                    <a href="#"><i class="fa fa-search"></i></a>
-                    <input type="text" placeholder="Buscar juego..." />
-                </div>
+        <!-- Puedes agregar el logo o nombre de la agencia aquí -->
+
+        <!-- Menú de navegación si es necesario -->
+        <nav>
+            <h1>Nodo Norte</h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="#banner">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                </ul>
             </div>
-            <div class="btn-login">
-                <a href="./pages/login.html"><i class="fa fa-user"></i> Iniciar sesión</a>
-            </div>
-            <div class="toggleMenu" onclick="toggleMenu();"></div>
+        </nav>
     </header>
 
-    <!-- banner principal-->
+    <!-- Sección del Banner Principal -->
 
-    <main>
-        <div class="banner animeX">
-            <div class="bg">
-                <div class="content">
-                    <div class="titulo">
-                        <img class="logo" src="./img/logo/logo.svg" alt="cartas-de-poker">
-                        <h2>Fortuna Dorada</h2>
-                    </div>
-                    <p>Somos una empresa dedicada al casino online.</p>
-                    <a href="#" class="btn">gana ahora!</a>
-                </div>
-                <img class="grande" src="./img/cartas.png" alt="cartas-de-poker">
-            </div>
-        </div>
-    </main>
-
-    <!-- juegos más destacados -->
-
-    <section class="juegos animeX">
-        <div class="contentBx">
-            <h3>Nuestros mejores juegos</h3>
-            <ul>
-                <li class="list" data-filter="all">Todos</li>
-                <li class="list" data-filter="popular">Más populares</li>
-                <li class="list" data-filter="poker">poker</li>
-                <li class="list" data-filter="slots">slots</li>
-            </ul>
-            <div class="cardBx owl-carousel">
-                <div class="card item" data-item="popular">
-                    <img src="./img/slots/2-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Esqueleto Mariachi</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$20.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="poker">
-                    <img src="./img/slots/1-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Wild Worlds</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$10.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="popular">
-                    <img src="./img/slots/3-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Golden Criptex</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$30.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="poker">
-                    <img src="./img/slots/4-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Double Wammy</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$10.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="popular slots">
-                    <img src="./img/slots/5-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Reel Gems</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$20.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="popular slots">
-                    <img src="./img/slots/6-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Flowers</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$30.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="popular">
-                    <img src="./img/slots/7-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>What a Hoot</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$40.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="popular">
-                    <img src="./img/slots/8-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Dolphin Quest</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$10.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="popular">
-                    <img src="./img/slots/9-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>Cool Buck</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$20.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-                <div class="card item" data-item="popular">
-                    <img src="./img/slots/10-slot.jpg" alt="casino-online">
-                    <div class="content">
-                        <h4>So many monsters</h4>
-                        <p>profit:</p>
-                        <div class="profit-line"><span></span></div>
-                        <div class="info">
-                            <p>pago mínimo:</p>
-                            <p><span>$20.-</span></p>
-                        </div>
-                        <a href="#">Juega ahora</a>
-                    </div>
-                </div>
-
+    <section id="banner" data-aos="fade-up">
+        <div id="particles-js">
+            <div class="banner-content">
+                <h1>Nodo Norte</h2>
+                    <p>Somos una agencia multimedial especializada en crear experiencias impactantes para tu marca.
+                        Desde diseño web hasta marketing digital, estamos aquí para potenciar tu presencia en línea.</p>
+                    <a href="#servicios" class="btn">Descubre Nuestros Servicios</a>
             </div>
         </div>
     </section>
-    <!-- categorías -->
 
-    <section class="categorias animeX">
-        <h2>Por Categorias</h2>
-        <div class="boxBx owl-carousel">
-            <div class="box">
-                <img src="./img/categorias/cat-slots.jpg" alt="slots">
-                <div class="content">
-                    <h4><span>| SLOTS |</span></h4>
-                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
-                    <div class="btn">
-                        <a href="#" class="categoria">ver juegos</a>
-                    </div>
-                </div>
+    <!-- Sección de Servicios -->
+    <section id="servicios" data-aos="fade-up">
+        <!-- Contenido de la sección de servicios -->
+    </section>
+
+    <!-- Sección de Portfolio -->
+    <section id="portfolio" data-aos="fade-up">
+        <!-- Contenido de la sección de portfolio -->
+    </section>
+
+    <section id="clientes" data-aos="fade-up">
+        <h2>Nuestros Clientes</h2>
+        <div class="slick-carousel">
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-1" alt="Cliente 1" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-2" alt="Cliente 2" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-3" alt="Cliente 3" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-4" alt="Cliente 4" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-5" alt="Cliente 5" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-6" alt="Cliente 6" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-7" alt="Cliente 7" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-8" alt="Cliente 8" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-9" alt="Cliente 9" width="150" height="100"></div>
+            <div><img src="https://fakeimg.pl/150x100/?text=Cliente-10" alt="Cliente 10" width="150" height="100"></div>
+            <!-- Agrega más logos según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sección de Equipo -->
+    <section id="equipo" data-aos="fade-up">
+        <h2>Nuestro Equipo</h2>
+        <p>Somos disciplinados, estamos comprometidos al trabajo en equipo, cada uno de nosotros nos especializamos en
+            cada área para poder brindar el mejor resultado.</p>
+        <div class="slick-carousel equipo-carousel">
+            <!-- Integrante 1 -->
+            <div class="equipo-item">
+                <img src="./assets/img/team/Vicky.png" alt="Vicky">
+                <h3>Victoria Teresita Seiner</h3>
+                <p>Diseñadora multimedial - Edición Audiovisual</p>
             </div>
-            <div class="box">
-                <img src="./img/categorias/cat-ruleta.jpg" alt="ruleta">
-                <div class="content">
-                    <h4><span>| RULETA |</span></h4>
-                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
-                    <div class="btn">
-                        <a href="#" class="categoria">ver mesas</a>
-                    </div>
-                </div>
+
+            <!-- Integrante 2 -->
+            <div class="equipo-item">
+                <img src="./assets/img/team/rebe.png" alt="Rebe">
+                <h3>Rebeca Isabel Ponce Cepeda</h3>
+                <p>Dirección en Arte - Edición Audiovisual / Diseño Gráfico</p>
             </div>
-            <div class="box">
-                <img src="./img/categorias/cat-poker.jpg" alt="cartas">
-                <div class="content">
-                    <h4><span> | CARTAS | </span></h4>
-                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
-                    <div class="btn">
-                        <a href="./pages/404notFound.html" class="categoria">ver juegos</a>
-                    </div>
-                </div>
+
+            <!-- Integrante 3 -->
+            <div class="equipo-item">
+                <img src="./assets/img/team/caro.png" alt="Caro">
+                <h3>Carolina Vanesa Sans García</h3>
+                <p>Lic. en comunicación - Diseño Gráfico / Ilustración</p>
             </div>
-            <div class="box">
-                <img src="./img/categorias/cat-ruleta.jpg" alt="ruleta">
-                <div class="content">
-                    <h4><span>| EN VIVO |</span></h4>
-                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
-                    <div class="btn">
-                        <a href="./pages/404notFound.html" class="categoria">ver mesas</a>
-                    </div>
-                </div>
+
+            <!-- Integrante 4 -->
+            <div class="equipo-item">
+                <img src="./assets/img/team/nahu.png" alt="Nahu">
+                <h3>Nahuel Gonzalo Farut</h3>
+                <p>Desarrollador web - Diseño Web / Marketing digital </p>
             </div>
-            <div class="box">
-                <img src="./img/categorias/cat-ruleta.jpg" alt="ruleta">
-                <div class="content">
-                    <h4><span>| CASA DE APUESTAS |</span></h4>
-                    <P>Disfrutá de la más amplia gama en juegos de casino online y ahora también en vivo. Contamos con salas de Ruleta, Blackjack y Baccarat en las que podrás conversar con los jugadores y el croupier en vivo como si estuvieras físicamente ahí. Accedé desde el dispositivo que quieras, desde donde estés para sentir la nueva experiencia que tenemos para vos.</P>
-                    <div class="btn">
-                        <a href="./pages/404notFound.html" class="categoria">ver mesas</a>
-                    </div>
-                </div>
+
+            <!-- Integrante 5 -->
+            <div class="equipo-item">
+                <img src="./assets/img/team/nico.png" alt="Nico">
+                <h3>Nicolás Spezia</h3>
+                <p>Dearrollador Web - Diseño Web / </p>
             </div>
         </div>
     </section>
 
 
-    <!-- Sobre Nosotros -->
+    <!-- Footer -->
+    <footer>
+        <h1>Nodo Norte</h1>
+        <!-- Contenido del footer, como botones de contacto y enlaces a redes sociales -->
+    </footer>
+    <!-- Agrega esto al final de tu body o antes del cierre de la etiqueta body -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <section class="about">
-        <div class="contentBx">
-            <h2>Conocenos mejor</h2>
-            <p> Jugá en cualquier lugar y en cualquier momento. No hay necesidad de planear un día de excursión cuando jugás juegos de casino online.En la mayoría de los casinos online podés jugar desde cualquier lugar y en cualquier momento.Diseño del juego.Los juegos de casino online ofrecen una experiencia inmersiva ya que presentan hermosos gráficos en 3 D con infinidad de opciones temáticas.</p>
+    <script src="./assets/js/main.js"></script>
+    <!-- final del body -->
+    <script src="./assets/js/nodos.js"></script>
 
-            <a href=""><i>Registrate</i></a>
-        </div>
-        <img src="./img/slots.png" alt="slots">
-    </section>
-    
-<!-- footer -->
-<footer>
-    <div class="info">
-        <a href="#" class="logo">Fortuna Dorada</a>
-        <p><i class="fa-solid fa-copyright">  2023 Todos los derechos reservados</i></p>
-        <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        </ul>
-    </div>
-</footer>
-    
-    <!-- Scripts -->
-    <!-- responsive navbar  --> 
-    <script src="./js/toggleMenu.js"></script>
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    
-    <!-- owl-carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    
-    <script>
-   
-        /*owl */
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                loop:true,
-                margin:10,
-                nav: true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:2
-                    },
-                    1000:{
-                        items:4
-                    }
+    <script src="./assets/js/particles.js"></script>
 
-                }
-            });
-        });
-
-        /* sticky - Navbar Fija */
-
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('header');
-            header.classList.toggle('active')
-            nav.classList.toggle('active')
-        });
-        
-
-
-
-        /* efecto de animación del scroll */
-
-        window.addEventListener('scroll', function(){
-            var anime = document.querySelectorAll('.animeX');
-            for(var s = 0; s < anime.length; s++){
-                var windowheight = window.innerHeight;
-                var animetop = anime[s].getBoundingClientRect().top;
-                var animepoint = 150;
-                if(animetop < windowheight - animepoint){
-                    anime[s].classList.add('active');
-                }else{
-                    anime[s].classList.remove('active');
-                }
-            }
-        })
-
-        /* Filtrado de Categorías */
-
-        let list = document.querySelectorAll('.list');
-        let card = document.querySelectorAll('.card');
-
-        for (let i = 0; i<list.length; i++){
-            list[i].addEventListener('click',function(){
-                for (let j=0; j<list.length; j++) {
-                    list[j].classList.remove('active');
-                }
-                this.classList.add('active');
-
-                let dataFilter = this.getAttribute('data-filter');
-
-                for (let k = 0; k < card.length; k++) {
-                    card[k].classList.remove('active');
-                    card[k].classList.add('hide');
-
-                    if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all') {
-                        card[k].classList.remove('hide');
-                        card[k].classList.add('active');
-                    }
-                }
-            })
-        };
-
-    </script>
 </body>
 
 </html>
